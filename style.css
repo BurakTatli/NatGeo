@@ -1,0 +1,3763 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "menu-geo";
+    src: url(./Fonts/geographweb-regular.woff2);
+}
+
+@font-face {
+    font-family: "geoeditmedium";
+    src: url(./Fonts/geographeditweb-medium.woff2);
+}
+
+@font-face {
+    font-family: "geobrandbold";
+    src: url(./Fonts/geographweb-bold.woff2);
+}
+
+@font-face {
+    font-family: "geoeditregular";
+    src: url(./Fonts/geographeditweb-regular.woff2);
+}
+
+@font-face {
+    font-family: "geobranditalic";
+    src: url(./Fonts/geographeditweb-regularitalic.woff2);
+}
+
+.container {
+    font-family: geoeditregular;
+    overflow: hidden;
+}
+
+/* NAVBAR */
+
+/* Navbar Sol */
+
+.navbarPosition {
+    width: 100%;
+    height: 49px;
+    overflow: hidden;
+}
+
+.navbarFrame {
+    width: 100%;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarFrameLeft {
+    position: relative;
+    height: 48px;
+    width: 109px;
+}
+
+.natgeoLogo {
+    position: absolute;
+    width: 109px;
+    height: 48px;
+    left: 15px;
+    top: 5px;
+}
+
+/* Navbar Sağ */
+
+.navbarFrameRight {
+    height: 48px;
+    width: 470px;
+    display: flex;
+    position: relative;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar-list-item-5 {
+    height: 48px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    border-style: none;
+}
+
+.menuButton button {
+    text-decoration: none;
+    background-color: white;
+    list-style: none;
+    border-style: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menuButton button span {
+    font-family: geobrandbold;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: black;
+
+}
+
+.navbar-list-item-4 {
+    position: absolute;
+    right: 110px;
+}
+
+.subscribeFrame {
+    height: 48px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    box-shadow: 0 0 black inset ;
+    transition: all 0.3s linear;
+    color: white;
+}
+
+.subscribeFrame span {
+    font-family: geobrandbold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.subscribeFrame:hover {
+    box-shadow:  130px 0  #fc0 inset;
+    color: black;
+}
+
+.navbar-list-item-3 {
+    position: absolute;
+    left: 125px;
+}
+
+
+.newsletterFrame {
+    height: 48px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.newsletterFrame span {
+    font-family: geoeditregular;
+    font-size: 14px;
+    border-bottom: 2px solid #fc0;
+    transition: all 0.1s ease-in;
+}
+
+.newsletterFrame span:hover {
+    background-color: #fc0;
+}
+
+.navbar-list-item-2 {
+    position: absolute;
+    left: 100px;
+}
+
+.buyutec {
+    color: black;
+}
+
+.navbar-list-item-1 {
+    position: absolute;
+    left: 10px;
+}
+
+.login {
+    height: 48px;
+    width: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loginButton {
+    border-style: none;
+    text-decoration: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.loginButton span {
+    font-family: geobrandbold;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+/* İLK BÖLÜM */
+
+.ilkBolumContainer {
+    width: 1905px;
+    height: 1250px;
+    background-color: black;
+    color: white;
+}
+
+.backgroundFrame {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+}
+
+.listContainerPozisyon {
+    position: absolute;
+    width: 1050px;
+    height: 1250px;
+    left: 200px;
+    top: 49px;
+    overflow: hidden;
+}
+
+.listContainerGenel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: yellow;
+}
+
+.listContainerUst {
+    width: 1050px;
+    height: 280px;
+    background-color: black;
+    position: absolute;
+}
+
+.listContainerSol {
+    width: 360px;
+    height: 970px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 280px;
+}
+
+.listContainerSag {
+    width: 690px;
+    height: 970px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 280px;
+}
+
+
+/* İlk Bölüm Başlık */
+
+.genelBaslik {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding: 67px 0 67px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.genelBaslikBuyuk {
+    font-family: geobrandbold;
+    text-transform: uppercase;
+    font-size: 54px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+
+}
+
+.genelBaslikKucuk {
+    font-size: 18px;
+    font-family: geoeditregular;
+    letter-spacing: 0.1px;
+    margin-top: 20px;
+}
+
+.genelBaslikKucuk a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid #fc0;
+    background-repeat: no-repeat;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 0.125s;
+    transition-timing-function: ease-in;
+}
+
+.genelBaslikKucuk a:hover {
+    background-image: linear-gradient(120deg, #fc0, #fc0);
+    color: black;
+}
+
+
+.genelBaslikLine {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.yellowLine {
+    width: 60px;
+    background-color: #fc0;
+    height: 4px;
+}
+
+/* İlk Bölüm Sol */
+
+.listContainerSolUstBaslik {
+    width: 360px;
+    height: 40px;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.listContainerSolUstBaslikLine {
+    border-left: 4px solid #fc0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+
+.listContainerSolUstBaslikText {
+    text-transform: uppercase;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 32px;
+    line-height: 1.25;
+    width: 335px;
+    height: 24px;
+    position: absolute;
+    left: 25px;
+}
+
+
+/* Box-1 */
+
+.frameRowBox-1 {
+    height: 130px;
+    width: 360px;
+}
+
+.rowbox-1 {
+    height: 100px;
+    width: 360px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box1image {
+    height: 100px;
+    width: 100px;
+    background-image: url("https://i.natgeofe.com/n/35c75239-3d8d-4a78-b545-5ac938964857/DSC07107_square.jpg?w=390&h=390");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box1text {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1header {
+    height: 40px;
+    width: 250px;
+    text-align: left;
+    padding-top: 10px;
+
+}
+
+.box1header span {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.box1header a {
+    text-decoration: none;
+}
+
+.box1header span:hover {
+    text-decoration: underline;
+}
+
+.box1metin {
+    height: 60px;
+    width: 250px;
+    text-align: left;
+}
+
+.box1metin a {
+    text-decoration: none;
+}
+
+.box1metin span {
+    color: white;
+    font-family: geoeditmedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.box1metin span:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Box-2 */
+
+.frameRowBox-2 {
+    height: 130px;
+    width: 360px;
+}
+
+.rowbox-2 {
+    height: 100px;
+    width: 360px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box2image {
+    height: 100px;
+    width: 100px;
+    background-image: url("https://i.natgeofe.com/n/ab41e19c-09f8-4e23-b890-1aeb4c2c2343/NationalGeographic_2668446_square.jpg?w=390&h=390");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box2text {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box2header {
+    height: 40px;
+    width: 250px;
+    text-align: left;
+    padding-top: 10px;
+
+}
+
+.box2header span {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.box2header a {
+    text-decoration: none;
+}
+
+.box2header span:hover {
+    text-decoration: underline;
+}
+
+.box2metin {
+    height: 60px;
+    width: 250px;
+    text-align: left;
+}
+
+.box2metin a {
+    text-decoration: none;
+}
+
+.box2metin span {
+    color: white;
+    font-family: geoeditmedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.box2metin span:hover {
+    text-decoration: underline;
+}
+
+/* Box-3 */
+
+.frameRowBox-3 {
+    height: 130px;
+    width: 360px;
+}
+
+.rowbox-3 {
+    height: 100px;
+    width: 360px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box3image {
+    height: 100px;
+    width: 100px;
+    background-image: url("https://i.natgeofe.com/n/1e592efa-aaf2-4748-aa26-6a164d7706ea/GettyImages-960246934_square.jpg?w=390&h=390");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box3text {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box3header {
+    height: 40px;
+    width: 250px;
+    text-align: left;
+    padding-top: 10px;
+
+}
+
+.box3header span {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.box3header a {
+    text-decoration: none;
+}
+
+.box3header span:hover {
+    text-decoration: underline;
+}
+
+.box3metin {
+    height: 60px;
+    width: 250px;
+    text-align: left;
+}
+
+.box3metin a {
+    text-decoration: none;
+}
+
+.box3metin span {
+    color: white;
+    font-family: geoeditmedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.box3metin span:hover {
+    text-decoration: underline;
+}
+
+
+/* Box-4 */
+
+.frameRowBox-4 {
+    height: 130px;
+    width: 360px;
+}
+
+.rowbox-4 {
+    height: 100px;
+    width: 360px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box4image {
+    height: 100px;
+    width: 100px;
+    background-image: url("https://i.natgeofe.com/n/77cf2996-390c-42b9-b517-4c4d11281358/PA2325366_4078-Web_square.jpeg?w=390&h=390");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box4text {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box4header {
+    height: 40px;
+    width: 250px;
+    text-align: left;
+    padding-top: 0;
+}
+
+.box4header span {
+    color: black;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    background-color: white;
+    /* cursor: pointer; */
+}
+
+.box4header a {
+    text-decoration: none;
+}
+
+.box4metin {
+    height: 60px;
+    width: 250px;
+    text-align: left;
+}
+
+.box4metin a {
+    text-decoration: none;
+}
+
+.box4metin span {
+    color: white;
+    font-family: geoeditmedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.box4metin span:hover {
+    text-decoration: underline;
+}
+
+/* Box-5 */
+
+.frameRowBox-5 {
+    height: 130px;
+    width: 360px;
+}
+
+.rowbox-5 {
+    height: 100px;
+    width: 360px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box5image {
+    height: 100px;
+    width: 100px;
+    background-image: url("https://i.natgeofe.com/n/642e836b-266f-4ecc-8a44-f26362fed6ea/GettyImages-101956521_square.jpg?w=390&h=390");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box5text {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box5header {
+    height: 40px;
+    width: 250px;
+    text-align: left;
+    padding-top: 10px;
+
+}
+
+.box5header span {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.box5header a {
+    text-decoration: none;
+}
+
+.box5header span:hover {
+    text-decoration: underline;
+}
+
+.box5metin {
+    height: 60px;
+    width: 250px;
+    text-align: left;
+}
+
+.box5metin a {
+    text-decoration: none;
+}
+
+.box5metin span {
+    color: white;
+    font-family: geoeditmedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.box5metin span:hover {
+    text-decoration: underline;
+}
+
+/* Box-6 */
+
+.frameRowBox-6 {
+    height: 130px;
+    width: 360px;
+}
+
+.rowbox-6 {
+    height: 100px;
+    width: 360px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box6image {
+    height: 100px;
+    width: 100px;
+    background-image: url("https://i.natgeofe.com/n/919f81eb-ca67-4937-8274-ea1bd2643a7c/NationalGeographic_1206921_square.jpg?w=390&h=390");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box6text {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box6header {
+    height: 40px;
+    width: 250px;
+    text-align: left;
+    padding-top: 10px;
+
+}
+
+.box6header span {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.box6header a {
+    text-decoration: none;
+}
+
+.box6header span:hover {
+    text-decoration: underline;
+}
+
+.box6metin {
+    height: 60px;
+    width: 250px;
+    text-align: left;
+}
+
+.box6metin a {
+    text-decoration: none;
+}
+
+.box6metin span {
+    color: white;
+    font-family: geoeditmedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.box6metin span:hover {
+    text-decoration: underline;
+}
+
+.listContainerSolseemore {
+    height: 30px;
+    width: 360px;
+    margin-top: 30px;
+}
+
+.seeMore {
+    font-family: menu-geo;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #fc0;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 0.125s;
+    transition-timing-function: ease-in;
+}
+
+.seeMore:hover {
+    background-image: linear-gradient(120deg, #fc0, #fc0);
+    color: black;
+}
+
+
+/* İlk Bölüm Sağ */
+
+/* İlk Bölüm Sağ Üst */
+
+
+.cardContainer {
+    width: 690px;
+    height: 970px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.cardContainerUst {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.card-1 {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    cursor: pointer;
+}
+
+.backgroundimageDis {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.backgroundimageIc {
+    width: 100%;
+    height: 440px;
+    position: absolute;
+    transition: all .125s ease-in;
+}
+
+.backgroundimageIc img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.backgroundimageIc img:hover {
+    transform: scale(1.1);
+}
+
+
+.card-1-text {
+    width: 90%;
+    height: 170px;
+    background-color: transparent;
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-1-header {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.card-1-header span:hover {
+    text-decoration: underline;
+}
+
+.card-1-metin {
+    color: white;
+    letter-spacing: 3px;
+    font-size: 32px;
+    font-family: geoeditmedium;
+}
+
+.card-1-read {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    font-family: menu-geo;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+/* İlk Bölüm Sağ Alt */
+
+
+.cardContainerAlt {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 470px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.cardContainerAltFrame {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    display: flex;
+}
+
+.card-2 {
+    width: 333px;
+    height: 423px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-2ust {
+    width: 100%;
+    height: 50%;
+
+
+}
+
+.card-2ust img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.card-2ust img:hover {
+    transform: scale(1.1);
+    border-bottom: 4px solid #fc0;
+}
+
+.card-2alt {
+    width: 100%;
+    height: 50%;
+    padding: 15px 18px;
+
+}
+
+.card-2-text-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.card-2alt-header {
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 275px;
+    height: 18px;
+}
+
+.card-2alt-header a {
+    text-decoration: none;
+    color: gray;
+}
+
+.card-2alt-header span:hover {
+    text-decoration: underline;
+}
+
+
+.card-2alt-text {
+    color: black;
+    font-family: geoeditmedium;
+    font-size: 22px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    top: 30px;
+}
+
+.card-2-read {
+    width: 100%;
+    height: 100px;
+    font-family: geobrandbold;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 150px;
+}
+
+
+.card-3 {
+    width: 333px;
+    height: 423px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.card-3ust {
+    width: 100%;
+    height: 50%;
+
+}
+
+.card-3ust img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in;
+}
+
+.card-3ust img:hover {
+    transform: scale(1.1);
+    border-bottom: 4px solid #fc0;
+}
+
+.card-3alt {
+    width: 100%;
+    height: 50%;
+    padding: 15px 18px;
+
+}
+
+.card-3-text-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.card-3alt-header {
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 275px;
+    height: 18px;
+}
+
+.card-3alt-header a {
+    text-decoration: none;
+    color: gray;
+}
+
+.card-3alt-header span:hover {
+    text-decoration: underline;
+}
+
+
+.card-3alt-text {
+    color: black;
+    font-family: geoeditmedium;
+    font-size: 22px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    top: 30px;
+}
+
+.card-3-read {
+    width: 100%;
+    height: 100px;
+    font-family: geobrandbold;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 150px;
+}
+
+
+/* İKİNCİ BÖLÜM */
+
+.ikinciContainer {
+    width: 100%;
+    height: 1010px;
+    overflow: hidden;
+
+}
+
+.backgroundGif {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i.giphy.com/media/l44QD91kNUnSV8vde/giphy.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    position: relative;
+
+}
+
+.ikinciBölümMainContainer {
+    height: 100%;
+    width: 1020px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 200px;
+}
+
+.gifUstBolumContainer {
+    height: 60%;
+    width: 100%;
+    position: relative;
+
+}
+
+.gifAltBolumContainer {
+    height: 40%;
+    width: 100%;
+}
+
+.gifTextBox {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.gifTextHeader {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.gifTextHeader span {
+    position: absolute;
+    top: 30px;
+    left: 440px;
+    font-family: geobrandbold;
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: white;
+    top: 50px;
+
+}
+
+.gifTextText {
+    width: 75%;
+    height: 80px;
+    position: relative;
+    font-family: geoeditregular;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 0.1px;
+}
+
+.gifTextText span {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.gifTextWatchNow {
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-family: geobrandbold;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 14px;
+    text-decoration: none;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 0.125s;
+    transition-timing-function: ease-in;
+}
+
+.gifTextWatchNow span {
+    border-bottom: 2px solid #fc0;
+}
+
+.gifTextWatchNow span:hover {
+    background-image: linear-gradient(120deg, #fc0, #fc0);
+    color: black;
+}
+
+
+.gifAltBolumContainer {
+    width: 1020px;
+    height: 450px;
+    background-color: transparent;
+}
+
+.gifAltBolum {
+    width: 1020px;
+    height: 450px;
+}
+
+.gifAltBolumHeader {
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.gifAltBolumHeaderText {
+    font-size: 18px;
+    font-family: geobrandbold;
+    color: white;
+    letter-spacing: 3px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+}
+
+.seeshows {
+    position: absolute;
+    right: 0;
+    height: 20px;
+    color: white;
+    font-family: geobrandbold;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-decoration: none;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 0.125s;
+    transition-timing-function: ease-in;
+}
+
+.seeshows span {
+    border-bottom: 2px solid #fc0;
+}
+
+.seeshows span:hover {
+    background-image: linear-gradient(120deg, #fc0, #fc0);
+    color: black;
+}
+
+.gifAltBolumListFrame {
+    width: 1020px;
+    height: 400px;
+    background-color: transparent;
+}
+
+.gifAltBolumList {
+    width: 100%;
+    height: 260px;
+}
+
+.gifAltBolumList ul {
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.documentary-1 {
+    width: 188px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.documentary-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.documentary-1 img:hover {
+    transform: scale(1.1);
+}
+
+.documentary-2 {
+    width: 188px;
+    height: 100%;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.documentary-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.documentary-2 img:hover {
+    transform: scale(1.1);
+}
+
+.documentary-3 {
+    width: 188px;
+    height: 100%;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.documentary-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.documentary-3 img:hover {
+    transform: scale(1.1);
+}
+
+.documentary-4 {
+    width: 188px;
+    height: 100%;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.documentary-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.documentary-4 img:hover {
+    transform: scale(1.1);
+}
+
+.documentary-5 {
+    width: 188px;
+    height: 100%;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.documentary-5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.documentary-5 img:hover {
+    transform: scale(1.1);
+}
+
+/* ÜÇÜNCÜ BÖLÜM */
+
+.ucuncuContainer {
+    width: 1455px;
+    height: 315px;
+    background-color: black;
+    padding: 20px 217.5px 60px 217.5px;
+}
+
+.NatGeoTVFrame {
+    width: 1020px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.NatGeoTVText {
+    width: 1020px;
+    height: 81px;
+    background-color: black;
+    text-align: center;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    color: white;
+    font-size: 54px;
+    position: absolute;
+}
+
+.NatGeoTVLine {
+    width: 60px;
+    height: 10px;
+    border-bottom: 4px solid #fc0;
+    position: absolute;
+    bottom: 50px;
+}
+
+/* DÖRDÜNCÜ BÖLÜM */
+
+.dorduncuContainer {
+    width: 1455px;
+    height: 712px;
+    background-color: black;
+    position: relative;
+}
+
+.dorduncuContainerBackgraundFrame {
+    width: 100%;
+    height: 100%;
+    padding: 20px 217.5px 60px 217.5px;
+}
+
+.dorduncuGenelContainer {
+    width: 1020px;
+    height: 650px;
+    padding: 20px 20px;
+    position: absolute;
+    left: 170px;
+}
+
+.boxFrame {
+    height: 586px;
+    width: 988px;
+    display: flex;
+    position: relative;
+}
+
+.dorduncuBolumBox-1 {
+    height: 520px;
+    width: 390px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 80px;
+}
+
+.dorduncuBolumBox-1 img {
+    object-fit: cover;
+    height: 520px;
+    width: 390px;
+}
+
+.dorduncuBolumBox-2 {
+    height: 520px;
+    width: 390px;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    left: 200px;
+}
+
+.dorduncuBolumBox-2 img {
+    object-fit: cover;
+    height: 520px;
+    width: 390px;
+}
+
+.dorduncuBolumBox-3 {
+    height: 520px;
+    width: 390px;
+    object-fit: cover;
+    position: absolute;
+    overflow: hidden;
+    z-index: 3;
+    right: 270px;
+}
+
+.box-3-frame {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://i.natgeofe.com/n/23996625-2481-4581-92ca-34c1a8e97425/ASL_NGHomepage_1920x2560_3x4.jpg?w=800&h=1066");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.dorduncuBolumBox-3-Button-Box {
+    height: 50px;
+    width: 330px;
+    position: absolute;
+    bottom: 30px;
+}
+
+
+
+.dorduncuBolumBox-3-Button {
+    height: 45px;
+    width: 170px;
+    position: relative;
+    left: 80px;
+    top: 5px;
+    display: flex;
+}
+
+.watchNowButton {
+    height: 45px;
+    width: 170px;
+    background-color: #fc0;
+    text-decoration: 0;
+    border-style: none;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 white;
+    transition: ease-out 0.5s;
+}
+
+.textButton {
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.buttonIcon {
+    font-size: 12px;
+}
+
+.watchNowButton:hover {
+    box-shadow: inset 280px 0 0 0 white;
+    color: black;
+}
+
+.dorduncuBolumBox-4 {
+    height: 520px;
+    width: 390px;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    right: 120px;
+}
+
+.dorduncuBolumBox-4 img {
+    object-fit: cover;
+    height: 520px;
+    width: 390px;
+}
+
+.dorduncuBolumBox-5 {
+    height: 520px;
+    width: 390px;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+
+.dorduncuBolumBox-5 img {
+    object-fit: cover;
+    height: 520px;
+    width: 390px;
+}
+
+/* BEŞİNCİ BÖLÜM */
+
+.besinciContainer {
+    width: 1455px;
+    height: 1250px;
+}
+
+.besinciBolumBackgroundFrame {
+    width: 1455px;
+    height: 1250px;
+    background-image: url(https://i.natgeofe.com/n/7182c9cb-b0f1-4490-8386-ce2ae7ab900a/nationalgeographic_2384595_3x2.jpg?w=2880&h=1920);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 20px 200px 60px 200px;
+}
+
+.besinciBolumContentContainer {
+    width: 1200px;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    left: 127px;
+}
+
+.besinciBolumContentFrame {
+    width: 1200px;
+    height: 100%;
+    position: relative;
+}
+
+.besinciBolumHeader {
+    width: 100%;
+    height: 235px;
+    position: absolute;
+    top: 0;
+}
+
+.besinciBolumSol {
+    width: 60%;
+    height: 970px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 235px;
+}
+
+.besinciBolumSag {
+    width: 40%;
+    height: 970px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 235px;
+}
+
+/* Beşinci Bölüm Header */
+
+.besinciBolumHeaderPosition {
+    width: 100%;
+    height: 235px;
+    position: relative;
+    padding: 67px 0 60px 0;
+    background-color: transparent;
+    display: flex;
+}
+
+.besinciBolumHeaderText {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    text-align: center;
+}
+
+.besinciBolumHeaderText span {
+    font-size: 54px;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.besinciBolumHeaderLine {
+    width: 60px;
+    height: 10px;
+    border-bottom: 4px solid #fc0;
+    position: absolute;
+    bottom: 60px;
+    left: 570px;
+}
+
+/* Beşinci Bölüm Sol Taraf */
+
+.besinciBolumSolCardContainer {
+    width: 690px;
+    height: 970px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.besinciBolumSolCardContainerUst {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.besinciBolumSolCard-1 {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    cursor: pointer;
+}
+
+.besinciBolumSolBackgroundImageDis {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.besinciBolumSolBackgroundImageIc {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .125s ease-in;
+}
+
+.besinciBolumSolBackgroundImageIc img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.besinciBolumSolBackgroundImageIc img:hover {
+    transform: scale(1.1);
+}
+
+.besinciBolumSolCard-1-Text {
+    width: 90%;
+    height: 170px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.besinciBolumSolCard-1-Header {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.besinciBolumSolCard-1-Metin {
+    color: white;
+    letter-spacing: 3px;
+    font-size: 32px;
+    font-family: geoeditmedium;
+    margin-top: 25px;
+}
+
+.besinciBolumSolCard-1-Read {
+    width: 100%;
+    height: 100px;
+    margin-top: 25px;
+    font-family: menu-geo;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+/* Beşinci Bölüm Sağ Alt */
+
+
+.besinciBolumSolCardContainerAlt {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 470px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.besinciBolumSolCardContainerAltFrame {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    display: flex;
+}
+
+.besinciBolumSolCard-2 {
+    width: 333px;
+    height: 423px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.besinciBolumSolCard-2ust {
+    width: 100%;
+    height: 80%;
+}
+
+.besinciBolumSolCard-2ust img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.besinciBolumSolCard-2ust img:hover {
+    transform: scale(1.1);
+    border-bottom: 4px solid #fc0;
+}
+
+.besinciBolumSolCard-2alt {
+    width: 100%;
+    height: 50%;
+    padding: 15px 18px;
+}
+
+.besinciBolumSolCard-2-text-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.besinciBolumSolCard-2alt-text {
+    color: black;
+    font-family: geoeditmedium;
+    font-size: 22px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    top: 5px;
+}
+
+.besinciBolumSolCard-2-read {
+    width: 100%;
+    height: 100px;
+    font-family: geobrandbold;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 85px;
+}
+
+.besinciBolumSolCard-3 {
+    width: 333px;
+    height: 423px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.besinciBolumSolCard-3ust {
+    width: 100%;
+    height: 90%;
+}
+
+.besinciBolumSolCard-3ust img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in;
+}
+
+.besinciBolumSolCard-3ust img:hover {
+    transform: scale(1.1);
+    border-bottom: 4px solid #fc0;
+}
+
+.besinciBolumSolCard-3alt {
+    width: 100%;
+    height: 50%;
+    padding: 15px 18px;
+}
+
+.besinciBolumSolCard-3-text-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.besinciBolumSolCard-3alt-text {
+    color: black;
+    font-family: geoeditmedium;
+    font-size: 22px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    top: 5px;
+}
+
+.besinciBolumSolCard-3-read {
+    width: 100%;
+    height: 100px;
+    font-family: geobrandbold;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 55px;
+}
+
+/* Beşinci Bölüm Sağ Taraf */
+
+.besinciBolumSagUstBaslik {
+    width: 360px;
+    height: 80px;
+    display: flex;
+    position: relative;
+}
+
+.besinciBolumSagUstBaslikLine {
+    border-left: 4px solid #fc0;
+    width: 25px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+
+.besinciBolumSagUstBaslikText {
+    text-transform: uppercase;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 32px;
+    line-height: 1.25;
+    width: 335px;
+    height: 24px;
+    position: absolute;
+    left: 25px;
+    color: white;
+}
+
+.besinciBolumSagRows {
+    position: relative;
+    top: 30px;
+}
+
+/* Box-1 */
+
+.besinciBolumSagframeRowBox-1 {
+    height: 130px;
+    width: 360px;
+}
+
+.besinciBolumSagrowbox-1 {
+    height: 100px;
+    width: 360px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.besinciBolumSagbox1image {
+    height: 100px;
+    width: 100px;
+    background-image: url("https://i.natgeofe.com/n/835e4b1e-d8dc-4e50-878e-1c9eae8767a6/coverstory_canada_ITA_Warrior_Women_Extra_8_ukHR3_square.jpg?w=390&h=390");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.besinciBolumSagbox1text {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.besinciBolumSagbox1header {
+    height: 25px;
+    width: 250px;
+    text-align: left;
+}
+
+.besinciBolumSagbox1header span {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.besinciBolumSagbox1header a {
+    text-decoration: none;
+}
+
+.besinciBolumSagbox1header span:hover {
+    text-decoration: underline;
+}
+
+.besinciBolumSagbox1metin {
+    height: 60px;
+    width: 250px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.besinciBolumSagbox1metin a {
+    text-decoration: none;
+}
+
+.besinciBolumSagbox1metin span {
+    color: white;
+    font-family: geoeditmedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.besinciBolumSagbox1metin span:hover {
+    text-decoration: underline;
+}
+
+/* Box-2 */
+
+.besinciBolumSagframeRowBox-2 {
+    height: 130px;
+    width: 360px;
+}
+
+.besinciBolumSagrowbox-2 {
+    height: 100px;
+    width: 360px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.besinciBolumSagbox2image {
+    height: 100px;
+    width: 100px;
+    background-image: url("https://i.natgeofe.com/n/003c6dca-431e-4b71-894b-1442f530d096/GettyImages-525475349_square.jpg?w=390&h=390");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.besinciBolumSagbox2text {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.besinciBolumSagbox2header {
+    height: 25px;
+    width: 250px;
+    text-align: left;
+}
+
+.besinciBolumSagbox2header span {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.besinciBolumSagbox2header a {
+    text-decoration: none;
+}
+
+.besinciBolumSagbox2header span:hover {
+    text-decoration: underline;
+}
+
+.besinciBolumSagbox2metin {
+    height: 60px;
+    width: 250px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.besinciBolumSagbox2metin a {
+    text-decoration: none;
+}
+
+.besinciBolumSagbox2metin span {
+    color: white;
+    font-family: geoeditmedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.besinciBolumSagbox2metin span:hover {
+    text-decoration: underline;
+}
+
+/* Box-3 */
+
+.besinciBolumSagframeRowBox-3 {
+    height: 130px;
+    width: 360px;
+}
+
+.besinciBolumSagrowbox-3 {
+    height: 100px;
+    width: 360px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.besinciBolumSagbox3image {
+    height: 100px;
+    width: 100px;
+    background-image: url("https://i.natgeofe.com/n/adb41b5a-27ed-483c-b4b8-38d3bb745c56/eat_2JPABJJ_ukHR_square.jpg?w=390&h=390");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.besinciBolumSagbox3text {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.besinciBolumSagbox3header {
+    height: 25px;
+    width: 250px;
+    text-align: left;
+}
+
+.besinciBolumSagbox3header span {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.besinciBolumSagbox3header a {
+    text-decoration: none;
+}
+
+.besinciBolumSagbox3header span:hover {
+    text-decoration: underline;
+}
+
+.besinciBolumSagbox3metin {
+    height: 60px;
+    width: 250px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.besinciBolumSagbox3metin a {
+    text-decoration: none;
+}
+
+.besinciBolumSagbox3metin span {
+    color: white;
+    font-family: geoeditmedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.besinciBolumSagbox3metin span:hover {
+    text-decoration: underline;
+}
+
+/* Box-4 */
+
+.besinciBolumSagframeRowBox-4 {
+    height: 130px;
+    width: 360px;
+}
+
+.besinciBolumSagrowbox-4 {
+    height: 100px;
+    width: 360px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.besinciBolumSagbox4image {
+    height: 100px;
+    width: 100px;
+    background-image: url("https://i.natgeofe.com/n/c935cd10-c179-413a-9dfd-1e02f307e388/TT_report_whisky_DSC_0081-Copy_ukHR_square.jpg?w=390&h=390");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.besinciBolumSagbox4text {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.besinciBolumSagbox4header {
+    height: 25px;
+    width: 250px;
+    text-align: left;
+}
+
+.besinciBolumSagbox4header span {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.besinciBolumSagbox4header a {
+    text-decoration: none;
+}
+
+.besinciBolumSagbox4header span:hover {
+    text-decoration: underline;
+}
+
+.besinciBolumSagbox4metin {
+    height: 60px;
+    width: 250px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.besinciBolumSagbox4metin a {
+    text-decoration: none;
+}
+
+.besinciBolumSagbox4metin span {
+    color: white;
+    font-family: geoeditmedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.besinciBolumSagbox4metin span:hover {
+    text-decoration: underline;
+}
+
+/* Box-5 */
+
+.besinciBolumSagframeRowBox-5 {
+    height: 130px;
+    width: 360px;
+}
+
+.besinciBolumSagrowbox-5 {
+    height: 100px;
+    width: 360px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.besinciBolumSagbox5image {
+    height: 100px;
+    width: 100px;
+    background-image: url("https://i.natgeofe.com/n/cd441269-dbd9-4978-ab85-26a143df3a89/costarica_2016_06_JUNIO_03_CC_ICT_RUTA_AVES_DOTA_0235_HR_square.jpg?w=390&h=390");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.besinciBolumSagbox5text {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.besinciBolumSagbox5header {
+    height: 25px;
+    width: 250px;
+    text-align: left;
+}
+
+.besinciBolumSagbox5header span {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.besinciBolumSagbox5header a {
+    text-decoration: none;
+}
+
+.besinciBolumSagbox5header span:hover {
+    text-decoration: underline;
+}
+
+.besinciBolumSagbox5metin {
+    height: 60px;
+    width: 250px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.besinciBolumSagbox5metin a {
+    text-decoration: none;
+}
+
+.besinciBolumSagbox5metin span {
+    color: white;
+    font-family: geoeditmedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.besinciBolumSagbox5metin span:hover {
+    text-decoration: underline;
+}
+
+.besinciBolumSaglistContainerSolseemore {
+    height: 30px;
+    width: 360px;
+    margin-top: 60px;
+}
+
+.besinciBolumSagseeMore {
+    font-family: menu-geo;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #fc0;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 0.125s;
+    transition-timing-function: ease-in;
+}
+
+.besinciBolumSagseeMore:hover {
+    background-image: linear-gradient(120deg, #fc0, #fc0);
+    color: black;
+}
+
+/* ALTINCI BÖLÜM */
+
+.altinciContainer {
+    width: 1455px;
+    height: 670px;
+    background-color: white;
+}
+
+.podcastFrame {
+    width: 1455px;
+    height: 670px;
+    padding: 0 217px;
+}
+
+.podcastFramePosition {
+    width: 1455px;
+    height: 670px;
+}
+
+.podcastHeader {
+    width: 1020px;
+    height: 190px;
+    background-color: white;
+    position: relative;
+}
+
+.podcastHeader span {
+    color: black;
+    font-family: geobrandbold;
+    letter-spacing: 3.5px;
+    font-size: 42px;
+    position: absolute;
+    top: 70px;
+    left: 377px;
+}
+
+.podcastBoxFrame {
+    width: 1020px;
+    height: 340px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.podcastBox-1 {
+    width: 313px;
+    height: 320px;
+    background-color: white;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.podcastBox-1-image {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.podcastBox-1-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.podcastBox-1-image img:hover {
+    transform: scale(1.1);
+}
+
+.podcastBox-1-text {
+    width: 100%;
+    height: 50px;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    font-family: geoeditmedium;
+    letter-spacing: .1px;
+    font-size: 16px;
+}
+
+.podcastBox-2 {
+    width: 313px;
+    height: 320px;
+    background-color: white;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.podcastBox-2-image {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.podcastBox-2-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.podcastBox-2-image img:hover {
+    transform: scale(1.1);
+}
+
+.podcastBox-2-text {
+    width: 100%;
+    height: 50px;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    font-family: geoeditmedium;
+    letter-spacing: .1px;
+    font-size: 16px;
+}
+
+.podcastBox-3 {
+    width: 313px;
+    height: 320px;
+    background-color: white;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.podcastBox-3-image {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.podcastBox-3-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.podcastBox-3-image img:hover {
+    transform: scale(1.1);
+}
+
+.podcastBox-3-text {
+    width: 100%;
+    height: 50px;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    font-family: geoeditmedium;
+    letter-spacing: .1px;
+    font-size: 16px;
+}
+
+.podcastButtonFrame {
+    width: 1020px;
+    height: 50px;
+    position: relative;
+    display: flex;
+}
+
+.podcastButton {
+    width: 280px;
+    height: 45px;
+    position: absolute;
+    left: 370px;
+    background-color: #fc0;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: width 1s ease;
+    color: black;
+    box-shadow: inset 0 0 0 0 white;
+    transition: ease-out 0.5s;
+}
+
+.podcastButton span {
+    font-family: geobrandbold;
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    color: black;
+}
+
+.podcastButton:hover {
+    box-shadow: inset 280px 0 0 0 white;
+    color: black;
+}
+
+/* YEDİNCİ BÖLÜM */
+
+.yedinciContainer {
+    width: 1455px;
+    height: 1250px;
+}
+
+.yedinciBolumBackgroundFrame {
+    width: 1455px;
+    height: 1250px;
+    background-color: black;
+    position: relative;
+    padding: 20px 200px 60px 200px;
+}
+
+.yedinciBolumContentContainer {
+    width: 1200px;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    left: 127px;
+}
+
+.yedinciBolumContentFrame {
+    width: 1200px;
+    height: 100%;
+    position: relative;
+}
+
+.yedinciBolumHeader {
+    width: 100%;
+    height: 235px;
+    position: absolute;
+    top: 0;
+}
+
+.yedinciBolumSol {
+    width: 60%;
+    height: 970px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 235px;
+}
+
+.yedinciBolumSag {
+    width: 40%;
+    height: 970px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 235px;
+}
+
+/* Yedinci Bölüm Header */
+
+.yedinciBolumHeaderPosition {
+    width: 100%;
+    height: 235px;
+    position: relative;
+    padding: 30px 0 20px 0;
+    background-color: transparent;
+    display: flex;
+}
+
+.yedinciBolumHeaderText {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.yedinciBolumBuyukBaslik {
+    font-size: 54px;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.yedinciBolumKucukBaslik {
+    color: white;
+    font-size: 18px;
+    letter-spacing: .1px;
+}
+
+.yedinciBolumKucukBaslik a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid #fc0;
+    background-repeat: no-repeat;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 0.125s;
+    transition-timing-function: ease-in;
+}
+
+.yedinciBolumKucukBaslik a:hover {
+    background-image: linear-gradient(120deg, #fc0, #fc0);
+    color: black;
+}
+
+.yedinciBolumHeaderLine {
+    width: 60px;
+    height: 10px;
+    border-bottom: 4px solid #fc0;
+    position: absolute;
+    bottom: 60px;
+    left: 570px;
+}
+
+/* Yedinci Bölüm Sol Taraf */
+
+.yedinciBolumSolCardContainer {
+    width: 690px;
+    height: 970px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.yedinciBolumSolCardContainerUst {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.yedinciBolumSolCard-1 {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    cursor: pointer;
+}
+
+.yedinciBolumSolBackgroundImageDis {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.yedinciBolumSolBackgroundImageIc {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .125s ease-in;
+}
+
+.yedinciBolumSolBackgroundImageIc img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.yedinciBolumSolBackgroundImageIc img:hover {
+    transform: scale(1.1);
+}
+
+.yedinciBolumSolCard-1-Text {
+    width: 90%;
+    height: 170px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.yedinciBolumSolCard-1-Header {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.yedinciBolumSolCard-1-Metin {
+    color: white;
+    letter-spacing: 3px;
+    font-size: 32px;
+    font-family: geoeditmedium;
+    margin-top: 10px;
+}
+
+.yedinciBolumSolCard-1-Read {
+    width: 100%;
+    height: 100px;
+    margin-top: 25px;
+    font-family: menu-geo;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+/* Yedinnci Bölüm Sağ Alt */
+
+
+.yedinciBolumSolCardContainerAlt {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 470px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.yedinciBolumSolCardContainerAltFrame {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    display: flex;
+}
+
+.yedinciBolumSolCard-2 {
+    width: 333px;
+    height: 423px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.yedinciBolumSolCard-2ust {
+    width: 100%;
+    height: 80%;
+}
+
+.yedinciBolumSolCard-2ust img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.yedinciBolumSolCard-2ust img:hover {
+    transform: scale(1.1);
+    border-bottom: 4px solid #fc0;
+}
+
+.yedinciBolumSolCard-2alt {
+    width: 100%;
+    height: 50%;
+    padding: 15px 18px;
+}
+
+.yedinciBolumSolCard-2-text-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.yedinciBolumSolCard-2alt-header {
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 275px;
+    height: 18px;
+}
+
+.yedinciBolumSolCard-2alt-header a {
+    text-decoration: none;
+    color: gray;
+}
+
+.yedinciBolumSolCard-2alt-header span:hover {
+    text-decoration: underline;
+}
+
+.yedinciBolumSolCard-2alt-text {
+    color: black;
+    font-family: geoeditmedium;
+    font-size: 22px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    top: 20px;
+}
+
+.yedinciBolumSolCard-2-read {
+    width: 100%;
+    height: 100px;
+    font-family: geobrandbold;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 115px;
+    cursor: pointer;
+}
+
+
+.yedinciBolumSolCard-3 {
+    width: 333px;
+    height: 423px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.yedinciBolumSolCard-3ust {
+    width: 100%;
+    height: 90%;
+}
+
+.yedinciBolumSolCard-3ust img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in;
+}
+
+.yedinciBolumSolCard-3ust img:hover {
+    transform: scale(1.1);
+    border-bottom: 4px solid #fc0;
+}
+
+.yedinciBolumSolCard-3alt {
+    width: 100%;
+    height: 50%;
+    padding: 15px 18px;
+}
+
+.yedinciBolumSolCard-3-text-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.yedinciBolumSolCard-3alt-text {
+    color: black;
+    font-family: geoeditmedium;
+    font-size: 22px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    top: 5px;
+}
+
+.yedinciBolumSolCard-3-read {
+    width: 100%;
+    height: 100px;
+    font-family: geobrandbold;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 85px;
+    cursor: pointer;
+}
+
+/* Yedinci Bölüm Sağ Taraf */
+
+.yedinciBolumSagUstBaslik {
+    width: 360px;
+    height: 80px;
+    display: flex;
+    position: relative;
+}
+
+.yedinciBolumSagUstBaslikLine {
+    border-left: 4px solid #fc0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+
+.yedinciBolumSagUstBaslikText {
+    text-transform: uppercase;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 32px;
+    line-height: 1.25;
+    width: 335px;
+    height: 24px;
+    position: absolute;
+    left: 25px;
+    color: white;
+}
+
+.yedinciBolumSagRows {
+    position: relative;
+    top: -10px;
+}
+
+/* Box-1 */
+
+.yedinciBolumSagframeRowBox-1 {
+    height: 130px;
+    width: 360px;
+}
+
+.yedinciBolumSagrowbox-1 {
+    height: 100px;
+    width: 360px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.yedinciBolumSagbox1image {
+    height: 100px;
+    width: 100px;
+    background-image: url(https://i.natgeofe.com/n/ef71a0ea-79a7-4db5-a472-dcacf3756274/05_DJI_0239a_Thomas%20Peschak_square.jpg?w=390&h=390);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.yedinciBolumSagbox1text {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.yedinciBolumSagbox1header {
+    height: 25px;
+    width: 250px;
+    text-align: left;
+}
+
+.yedinciBolumSagbox1header span {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.yedinciBolumSagbox1header a {
+    text-decoration: none;
+}
+
+.yedinciBolumSagbox1header span:hover {
+    text-decoration: underline;
+}
+
+.yedinciBolumSagbox1metin {
+    height: 60px;
+    width: 250px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.yedinciBolumSagbox1metin a {
+    text-decoration: none;
+}
+
+.yedinciBolumSagbox1metin span {
+    color: white;
+    font-family: geoeditmedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.yedinciBolumSagbox1metin span:hover {
+    text-decoration: underline;
+}
+
+/* Box-2 */
+
+.yedinciBolumSagframeRowBox-2 {
+    height: 130px;
+    width: 360px;
+}
+
+.yedinciBolumSagrowbox-2 {
+    height: 100px;
+    width: 360px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.yedinciBolumSagbox2image {
+    height: 100px;
+    width: 100px;
+    background-image: url(https://i.natgeofe.com/n/dc9f664f-9132-4d7e-96fc-9db821b11922/MM10067_230113_00381_square.jpg?w=390&h=390);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.yedinciBolumSagbox2text {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.yedinciBolumSagbox2header {
+    height: 25px;
+    width: 250px;
+    text-align: left;
+}
+
+.yedinciBolumSagbox2header span {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.yedinciBolumSagbox2header a {
+    text-decoration: none;
+}
+
+.yedinciBolumSagbox2header span:hover {
+    text-decoration: underline;
+}
+
+.yedinciBolumSagbox2metin {
+    height: 60px;
+    width: 250px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.yedinciBolumSagbox2metin a {
+    text-decoration: none;
+}
+
+.yedinciBolumSagbox2metin span {
+    color: white;
+    font-family: geoeditmedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.yedinciBolumSagbox2metin span:hover {
+    text-decoration: underline;
+}
+
+/* Box-3 */
+
+.yedinciBolumSagframeRowBox-3 {
+    height: 130px;
+    width: 360px;
+}
+
+.yedinciBolumSagrowbox-3 {
+    height: 100px;
+    width: 360px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.yedinciBolumSagbox3image {
+    height: 100px;
+    width: 100px;
+    background-image: url(https://i.natgeofe.com/n/aecae6e4-9042-4033-a122-6f3b5cda6b41/NationalGeographic_2316058_crop2_square.jpg?w=390&h=390);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.yedinciBolumSagbox3text {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.yedinciBolumSagbox3header {
+    height: 25px;
+    width: 250px;
+    text-align: left;
+}
+
+.yedinciBolumSagbox3header span {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.yedinciBolumSagbox3header a {
+    text-decoration: none;
+}
+
+.yedinciBolumSagbox3header span:hover {
+    text-decoration: underline;
+}
+
+.yedinciBolumSagbox3metin {
+    height: 60px;
+    width: 250px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.yedinciBolumSagbox3metin a {
+    text-decoration: none;
+}
+
+.yedinciBolumSagbox3metin span {
+    color: white;
+    font-family: geoeditmedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.yedinciBolumSagbox3metin span:hover {
+    text-decoration: underline;
+}
+
+/* Box-4 */
+
+.yedinciBolumSagframeRowBox-4 {
+    height: 130px;
+    width: 360px;
+}
+
+.yedinciBolumSagrowbox-4 {
+    height: 100px;
+    width: 360px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.yedinciBolumSagbox4image {
+    height: 100px;
+    width: 100px;
+    background-image: url(https://i.natgeofe.com/n/f97e9b48-a324-4576-a67f-d94e9be2165a/another-tail-by-moonlight-09_square.jpg?w=390&h=390);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.yedinciBolumSagbox4text {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.yedinciBolumSagbox4header {
+    height: 25px;
+    width: 250px;
+    text-align: left;
+}
+
+.yedinciBolumSagbox4header span {
+    color: white;
+    font-family: geobrandbold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.yedinciBolumSagbox4header a {
+    text-decoration: none;
+}
+
+.yedinciBolumSagbox4header span:hover {
+    text-decoration: underline;
+}
+
+.yedinciBolumSagbox4metin {
+    height: 60px;
+    width: 250px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.yedinciBolumSagbox4metin a {
+    text-decoration: none;
+}
+
+.yedinciBolumSagbox4metin span {
+    color: white;
+    font-family: geoeditmedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.yedinciBolumSagbox4metin span:hover {
+    text-decoration: underline;
+}
+
+.yedinciBolumSaglistContainerSolseemore {
+    height: 30px;
+    width: 360px;
+    margin-top: 30px;
+}
+
+.yedinciBolumSagseeMore {
+    font-family: menu-geo;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #fc0;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 0.125s;
+    transition-timing-function: ease-in;
+}
+
+.yedinciBolumSagseeMore:hover {
+    background-image: linear-gradient(120deg, #fc0, #fc0);
+    color: black;
+}
+
+/* SEKİZİNCİ BÖLÜM */
+
+.sekizinciContainer {
+    width: 1455px;
+    height: 550px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.NatGeoMissionFrame {
+    width: 1200px;
+    height: 640px;
+}
+
+.NatGeoMissionFramePosition {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.NatGeoMissionHeader {
+    width: 1000px;
+    height: 125px;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 50px;
+}
+
+.NatGeoMissionHeader span {
+    color: black;
+    font-family: geobrandbold;
+    font-size: 32px;
+    letter-spacing: 3px;
+
+}
+
+.NatGeoMissionHeaderLine {
+    width: 70px;
+    height: 10px;
+    border-bottom: 4px solid #fc0;
+    position: absolute;
+    top: 60px;
+}
+
+.NatGeoMissionBoxFrame {
+    height: 360px;
+    width: 1000px;
+    display: flex;
+    color: white;
+}
+
+.NatGeoMissionBox-1 {
+    height: 360px;
+    width: 570px;
+}
+
+.NatGeoMissionBox-1-image {
+    height: 360px;
+    width: 570px;
+}
+
+.NatGeoMissionBox-1-image img {
+    height: 360px;
+    width: 570px;
+}
+
+.NatGeoMissionBox-2 {
+    width: 410px;
+    height: 205px;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+.NatGeoMissionBox-2-text-header {
+    width: 410px;
+    height: 80px;
+    color: black;
+    font-family: geoeditmedium;
+    font-size: 28px;
+}
+
+.NatGeoMissionBox-2-text {
+    margin-top: 5px;
+}
+
+.NatGeoMissionBox-2-text span {
+    color: black;
+    font-family: geoeditregular;
+    font-size: 16px;
+    letter-spacing: .1px;
+    line-height: 1.5;
+}
+
+/* DOKUZUNCU BÖLÜM */
+
+.dokuzuncuBolumContainer {
+    width: 1455px;
+    height: 310px;
+    background-color: aqua;
+}
+
+.dokuzuncuBolumFrame {
+    width: 100%;
+    height: 100%;
+}
+
+.dokuzuncuBolumBoxFrame {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://i.natgeofe.com/n/2e2421a3-f3cb-485f-b482-753cce8baaa0/MossForest.adapt.885.1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.dokuzuncuBolumHeader {
+    color: white;
+    width: 1200px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    left: 160px;
+}
+
+.dokuzuncuBolumHeader span {
+    font-size: 31px;
+    letter-spacing: 3px;
+    font-family: geobrandbold;
+    line-height: 1.5;
+}
+
+.dokuzuncuBolumText {
+    width: 780px;
+    height: 25px;
+    position: absolute;
+    left: 380px;
+    top: 100px;
+}
+
+.dokuzuncuBolumText span {
+    color: white;
+    font-family: geoeditregular;
+    font-size: 18px;
+    letter-spacing: .1px;
+}
+
+.dokuzuncuBolumButtonFrame {
+    width: 1020px;
+    height: 50px;
+    position: absolute;
+    left: 530px;
+    top: 160px;
+    display: flex;
+}
+
+.signUpButton {
+    width: 440px;
+    height: 58px;
+    left: 370px;
+    background-color: #fc0;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: width 1s ease;
+    color: black;
+    box-shadow: inset 0 0 0 0 white;
+    transition: ease-out 0.5s;
+}
+
+.signUpButton span {
+    font-family: geobrandbold;
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    color: black;
+}
+
+.signUpButton:hover {
+    box-shadow: inset 440px 0 0 0 white;
+    color: black;
+}
+
+/* ONUNCU BÖLÜM */
+
+.footerContainer {
+    width: 1455px;
+    height: 470px;
+    background-color: black;
+}
+
+.footerPosition {
+    width: 1455px;
+    height: 470px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.footerFrame {
+    width: 1100px;
+    height: 470px;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.birinciSutun {
+    width: 260px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    list-style: none;
+    background-color: black;
+    color: white;
+}
+
+.footerHeader {
+    text-decoration: none;
+}
+
+.footerHeader span {
+    font-family: geobrandbold;
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+.birinciSutunList {
+    list-style: none;
+}
+
+.birinciSutunList li {
+    letter-spacing: .1px;
+    font-family: geoeditregular;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.birinciSutunList li:hover {
+    text-decoration: underline;
+}
+
+.ikinciSutun {
+    width: 260px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    list-style: none;
+    background-color: black;
+    color: white;
+}
+
+.footerHeader {
+    text-decoration: none;
+}
+
+.footerHeader span {
+    font-family: geobrandbold;
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+.ikinciSutunList {
+    list-style: none;
+}
+
+.ikinciSutunList li {
+    letter-spacing: .1px;
+    font-family: geoeditregular;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.ikinciSutunList li:hover {
+    text-decoration: underline;
+}
+
+.ucuncuSutun {
+    width: 260px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    list-style: none;
+    background-color: black;
+    color: white;
+}
+
+.footerHeader {
+    text-decoration: none;
+}
+
+.footerHeader span {
+    font-family: geobrandbold;
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+.ucuncuSutunList {
+    list-style: none;
+}
+
+.ucuncuSutunList li {
+    letter-spacing: .1px;
+    font-family: geoeditregular;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.ucuncuSutunList li:hover {
+    text-decoration: underline;
+}
+
+.dorduncuSutun {
+    width: 260px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    list-style: none;
+    background-color: black;
+    color: white;
+}
+
+.footerHeader {
+    text-decoration: none;
+}
+
+.footerHeader span {
+    font-family: geobrandbold;
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+.dorduncuSutunList {
+    list-style: none;
+}
+
+.dorduncuSutunList li {
+    letter-spacing: .1px;
+    font-family: geoeditregular;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* ONBİRİNCİ BÖLÜM */
+
+.sayfaSonuContainer {
+    width: 1455px;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid gray;
+}
+
+.sayfaSonuFrame {
+    width: 1100px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.sayfaSonuLogo {
+    width: 330px;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+}
+
+.sayfaSonuLogo img {
+    object-fit: contain;
+    width: 330px;
+    height: 70%;
+}
+
+.sayfaSonuText-1 {
+    width: 330px;
+    height: 20px;
+    border-right: 1px solid #999;
+    position: absolute;
+    left: 280px;
+    top: 20px;
+}
+
+.sayfaSonuText-1 span {
+    font-family: geoeditregular;
+    font-size: 12px;
+    letter-spacing: .2px;
+    color: #999;
+}
+
+.sayfaSonuText-2 {
+    width: 330px;
+    height: 100%;
+    position: absolute;
+    right: 150px;
+    top: 20px;
+}
+
+.sayfaSonuText-2 span {
+    font-family: geoeditregular;
+    font-size: 12px;
+    letter-spacing: .2px;
+    color: #999;
+}
